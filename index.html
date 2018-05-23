@@ -1,50 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>Sveikinimas</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <nav class="main-nav">
-        <p>Already signed up? Discover</p>
-        <ul class="contl">
-            <li>
-                <a href="#">Menu</a>
-            </li>
-            <li>
-                <a href="#">Recipes</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="content">
-        <div class="centerthispls"><h1>Explore world of tastes.</h1>
-        <div class="buttonas"><!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-    #mc_embed_signup{; clear:left; font:14px Helvetica,Arial,sans-serif; }
-    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="https://webdevt.us18.list-manage.com/subscribe/post?u=3a214cc7688cc75a613bcbb97&amp;id=d13ee0a4ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3a214cc7688cc75a613bcbb97_d13ee0a4ee" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Get started!" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+    <div class="Header" id="myHeader"><h1 class="virsus">Nedyla, su gimtadieniu!</h1></div>
+    <div class="container">
+        <div class="jaunilaikai">
+            <h1>Viskas prasidėjo mokykloje</h1>
+            <img src="mokykla.jpg" class="jaunasmokykloje">
+        </div>
+        <div class="neįprastas">
+            <h1>Nedas nebuvo paprastas vaikinas</h1>
+            <img src="neiprastas.png">
+        </div>
+        <div class="mokykla">
+            <h1>Jį mokykla užknisdavo, bet Nedo gyvenimas nebuvo nuobodus</h1>
+            <img src="mokykla1.jpg">
+        </div>
+        <div class="draugai">
+            <h1>Jis susirado draugų</h1>
+            <img src="draugai.jpg">
+        </div>
+        <div class="alkoholis">
+            <h1>Atrado alkoholį</h1>
+            <img src="alkoholis.jpg">
+        </div>
+        <div class="kava">
+            <h1>Suprato, kad kava palaiko gyvybę</h1>
+            <img src="kava.jpg">
+        </div>
+        <div class="pirtis">
+            <h1>Taip pat, kad geriau pirties akmenų alum neužpilinėt</h1>
+            <img src="pirtis.jpg">
+        </div>
+        <div class="menas">
+            <h1>Na ir dar, kad meniškų fotkių geriau nedaryt</h1>
+            <img src="menas.jpg">
+        </div>
+        <div class="meile">
+            <h1>Nu ir šiaip, kad tikra meilė tik tarp vyrų</h1>
+            <img src="meile.png">
+        </div>
+        <div class="pagalba">
+            <h1>Pagelbėti draugui bėdoje su diržu</h1>
+            <img src="dirzas.jpg">
+        </div>
+        <div class="paslaptis">
+            <h1>Ir kaip gi be life hack'ų</h1>
+            <img src="pilam.png">
+        </div>
+        <div class="perlai">
+            <h1>Bei perliukų</h1>
+            <img src="perliukai.png">
+        </div>
+        <div class="fermeris">
+            <h1>Tačiau nors ir jau suėjo 19, Nedas vis dar kaimo žmogus</h1>
+            <img src="kaimnas.png">
+        </div>
+            <div class="scam">
+        <a href="gift.html" class="buttonas">Atsiimti dovaną</a>
+        <h3>Definitely not a scam</h3>
     </div>
-</form>
-</div>
+    </div>
 
-<!--End mc_embed_signup--></div></div>
-    </div>
-    <div class="footer">Hire me pls</div>
-</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
 </html>
